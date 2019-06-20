@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@for $i from 1 through 20 {
+  $increment: 50;
+  $incrementColor: 20;
+  .bar-#{$i} {
+    padding: 5px 15px; 
+    margin: 3px 0px 3px 0px + $i*$increment;
+    background-color: rgb(255, 87 + $incrementColor, 51 + $incrementColor);
+    position: relative;
+    width: 100px;
+    border-radius: 5px;
+  }
+}
+  
+
